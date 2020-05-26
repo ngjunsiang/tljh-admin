@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+__pycache__
+.env
+*.log
+*.csv
+commit-to-github.ipynb

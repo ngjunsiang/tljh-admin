@@ -1,47 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# # Accessing the Dropbox API
+# ## Resources
 # 
-# This notebook contains:
-# 
-# 1. instructions for getting a Dropbox API token,
-# 2. wrapper code to access (a subset of) the Dropbox API,
-# 3. code for importing data from and exporting data to a CSV file.
-# 
-# ## Requirements
-# 
-# 1. Register a new Dropbox app
-# 2. Get an API token
-
-# ## 1 Register a new Dropbox app
-# 
-# Go to the Dropbox [Developer Apps page](https://www.dropbox.com/developers/apps). Click on [**Create app**](https://www.dropbox.com/developers/apps/create).
-
-# ![dropbox_create_app.PNG](attachment:dropbox_create_app.PNG)
-
-# Name your app anything you like.
-# 
-# Click on **Create app**.
-
-# ## 2 Get an API token
-
-# Go to the [Developer Apps page](https://www.dropbox.com/developers/apps/create) again, and click on your newly created app.
-# 
-# Scroll down to the section titled **OAuth 2**.
-
-# ![dropbox_generate_token.png](attachment:dropbox_generate_token.png)
-
-# Click on **Generate**, and copy the API token that you get.
-# 
-# You will need this API token later.
-
-# In[ ]:
-
-
-# Do not change the code in this cell.
-# It is needed for the main project.
-# Dropbox API class with required methods
+# [Dropbox API explorer](https://dropbox.github.io/dropbox-api-v2-explorer/#files_list_folder)  
+# [Dropbox API documentation](https://www.dropbox.com/developers/documentation/http/documentation)
 
 import requests
 import json
@@ -237,16 +199,3 @@ class DBApi:
         else:
             raise APIError(resp)
         return resp.json()
-
-
-# In[ ]:
-
-
-get_ipython().system(' jupyter nbconvert --to script get_dropbox_api.ipynb')
-get_ipython().system(' chmod 755 get_dropbox_api.py')
-
-
-# ## Resources
-# 
-# [Dropbox API explorer](https://dropbox.github.io/dropbox-api-v2-explorer/#files_list_folder)  
-# [Dropbox API documentation](https://www.dropbox.com/developers/documentation/http/documentation)
