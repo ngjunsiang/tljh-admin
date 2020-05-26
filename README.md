@@ -16,23 +16,23 @@ You need to create a customised `.env` file for your settings. It should look ha
 
 This repository contains the following scripts:
 
-1. `collect-submissions`
+1. `collect-submissions`  
    A script to collect all new submissions, and sync files to Dropbox.
 
-2. `culling`
+2. `culling`  
    An interface for enabling/disabling auto-culling of unused jupyter kernels.
 
-3. `disk-usage`
+3. `disk-usage`  
    An interface for checking disk usage on the VM, and vacuuming journal log files (which tend to take up a lot of space after some time.
 
-4. `enable-https`
+4. `enable-https`  
    A notebook for enabling automatic HTTPS renewal for your domain.
 
-5. `manage-students`
+5. `manage-students`  
    An interface for easy first-time setup of students.
 
-6. `resize-disk-when-full`
+6. `resize-disk-when-full`  
    A notebook documenting steps for resizing a Google Cloud VM instance when it runs out of space.
    
-7. `sync-all-to-dropbox`
+7. `sync-all-to-dropbox`  
    A notebook for syncing course directory contents to a Dropbox account.
