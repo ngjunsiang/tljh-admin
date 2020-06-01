@@ -15,6 +15,7 @@ class APIError(Exception):
     def __init__(self, resp, msg=None):
         self.response = resp
         print(f'{resp.status_code}: {resp.reason}\n'
+              f'{resp.json()}\n'
               f'Error message: {msg}')
 
 
